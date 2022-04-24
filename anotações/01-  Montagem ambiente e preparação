@@ -1,0 +1,18 @@
+formatador de código
+npm install --save-dev prettier
+
+
+npm install --save-dev tslint-config-prettier
+npm install --save-dev tslint-plugin-prettier
+
+- iniciando tslint caso nao estiver criado
+npx tslint --init
+
+_______________________________________________
+
+- Criando HOME:
+ng g module home --routing -d
+--routing
+-> ja cria as rodas
+-d:  modo "rascunho do CLI"
+
