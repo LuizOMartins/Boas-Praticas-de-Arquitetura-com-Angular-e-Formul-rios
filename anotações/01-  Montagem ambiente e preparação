@@ -30,3 +30,9 @@ ng g module home --routing -d
 Depois de criar o modulo, da pra criar o componente com o mesmo nome.
 - assim ja relaciona o modulo com o componente.
 
+
+
+_______________________________________________
+
+
+router-outlet : indica que o conteudo é vindo de uma rota
