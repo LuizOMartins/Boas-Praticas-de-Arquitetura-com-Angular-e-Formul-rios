@@ -1,3 +1,14 @@
+Rodando Projeto back-end:
+
+Dentro da pasta API rodar comando:
+npm start
+
+
+Rodar projet front-end:
+ng serve
+
+
+_______________________________________________
 formatador de código
 npm install --save-dev prettier
 
@@ -15,4 +26,7 @@ ng g module home --routing -d
 --routing
 -> ja cria as rodas
 -d:  modo "rascunho do CLI"
+
+Depois de criar o modulo, da pra criar o componente com o mesmo nome.
+- assim ja relaciona o modulo com o componente.
 
