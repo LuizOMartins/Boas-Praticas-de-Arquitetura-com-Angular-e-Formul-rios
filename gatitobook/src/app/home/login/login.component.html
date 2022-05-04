@@ -4,15 +4,26 @@
   <div class="form-group">
     <input  class="form-control" placeholder="Nome do Usuário"
     [(ngModel)]="usuario" name="usuario"
+    #campoUsuario="ngModel"
+    required
     />
   </div>
+
+  <app-mensagem
+  *ngIf="campoUsuario.invalid"
+  mensagem="Usuario Obrigatório" ></app-mensagem>
 
   <div class="form-group">
     <input  class="form-control" type="password" placeholder="Senha"
     [(ngModel)]="senha"
     name="senha"
+    #campoSenha="ngModel"
+    required
     />
   </div>
+  <app-mensagem
+  *ngIf="campoSenha.invalid"
+  mensagem="Senha Obrigatório" ></app-mensagem>
 
   <button type="submit" class="btn btn-primary btn-block" >Login</button>
 </form>
