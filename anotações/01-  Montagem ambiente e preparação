@@ -33,3 +33,6 @@ router-outlet : indica que o conteudo é vindo de uma rota
 
 _______________________________________________
 
+O Angular tem dois tipos de  formulários:
+- react fomrs: formulario reativo e formulario tipo template
+
