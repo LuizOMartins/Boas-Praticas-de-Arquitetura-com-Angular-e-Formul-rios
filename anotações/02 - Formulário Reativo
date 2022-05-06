@@ -1,0 +1,32 @@
+02 - Formulário Reativo
+
+Para configurar o modelo de dados do formulário, Cecília pode utilizar o serviço formBuilder disponibilizado pelo framework.
+
+
+Alternativa correta! Ela deve injetar o serviço no construtor e criar os elementos no método ngOnInit:
+
+ngOnInit(): void {
+    this.notaFiscalForm = this.formBuilder.group({
+        numero: [''],
+        serie: [''],
+        fornecedor: [''],
+    });
+}
+
+______________
+
+
+Para utilizar o formulário reativo, deve ser importado, no módulo da funcionalidade, o módulo ReactiveFormModule.
+
+
+Alternativa correta! Esse módulo contém todos os componentes e os serviços utilitários que ajudam a construção de formulários reativos.
+
+______________
+
+
+O time da Cecília deve associar o template ao modelo de dados do formulário utilizando a diretiva formGroup.
+
+
+Alternativa correta! Eles devem associar no elemento form:
+
+<form class="form mt-4" [formGroup]="notaFiscalForm" (submit)="cadastrar()">
